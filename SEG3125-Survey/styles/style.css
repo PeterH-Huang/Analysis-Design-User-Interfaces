@@ -1,0 +1,91 @@
+html {
+    background-color:#0B0C10;
+  }
+
+body {
+    background-color: #1F2833;
+    width: 80%;
+    border: 2px solid #D79922;
+    padding: 0px 20px 20px 20px;
+    vertical-align: middle;
+    align-self: center;
+    margin: auto;
+  }
+  
+h1 {
+	font-size: 60px;
+  font-family:Arial, Helvetica, sans-serif;
+	text-align: center;
+	margin: 0;
+	padding: 20px 0;
+	color: #45A29E; 
+}
+
+h2{
+  font-family:Arial, Helvetica, sans-serif;
+	text-align: center;
+  font-size: 15px;
+  font-style: italic;
+	margin: 0;
+	color: #45A29E; 
+}
+
+h3 {
+  font-family:Arial, Helvetica, sans-serif;
+	text-align: center;
+  font-size: 20px;
+	margin: 0;
+	padding: 20px 0;
+	color: #F1B24A; 
+
+}
+
+h4 {
+  font-family:Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 20px 0;
+	color: #45A29E ;
+
+}
+
+p {
+    color: #F1B24A;
+  }
+
+
+.Questions {
+  font-family:Arial, Helvetica, sans-serif;
+    
+    color: #c5c5c5;
+    margin: auto;
+    padding: auto;
+
+  }
+  
+
+.block {
+  font-family:Arial, Helvetica, sans-serif;
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #F1B24A; 
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 50%;
+}
+
+textarea{
+  width: 50%;
+  display: block;
+  text-align: center;
+  align-self: center;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <form id="regForm" action="">
+       
+    <div id = "banner" class = "banner">
+        <br>
+        <h1>Storey McGroceryFace</h1>
+    <p>We are a real grocery store and definitely not made-up</p>
+    <br>
+    </div>
+
+    <div style="text-align:center;margin-top:40px;">
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+    </div>
+    <br>
+
+    <div id = "home" class="content">
+            <h2>Welcome to Storey McGroceryFace!</h2>
+            <h3>How to use:</h3>
+        <ol type="1"class="center"> 
+            <li>Indicate on the next page if you're allergic to nuts, lactose intolerant and/or if organic food is preferred.</li>
+            <li>The page after will show a filtered list of items available based on your dietary restirctions/food preferences.</li>
+            <li>The page after that will display your selected items and the total price. It will also ask if you want pickup or delivery</li>
+            <li>Finally, enter your payment information and click "done" to submit</li>
+        </ol>
+        <p><strong>Please note that if you change your preferences at any point, you will need to click on a prices option in the "About Yourself" page for it to take effect.</strong></p>
+    </div>
+
+    <div id= "client" class="content">
+        <h3>Tell us about yourself!</h3>
+        <p>I am:</p>
+        <div id = "radios1" class = "radios1">
+        <input type ="radio" value ="Lactose" id="Lactose" name ="dietSelect" onclick="updateList(this.id)"><label for="Lactose">Lactose intolerant</label><br>
+        <input type ="radio" value ="Nuts" id="Nuts" name ="dietSelect" onclick="updateList(this.id)">Allergic to nuts <br>
+        <input type ="radio" value ="Both" id="Both" name ="dietSelect" onclick="updateList(this.id)">Allergic to nuts & lactose intorlerant<br>
+        <input type ="radio" value ="None" id="None" name ="dietSelect" onclick="updateList(this.id)">Neither<br>
+    </div>
+        <br>
+        <p>I have a preference for organic foods:</p>
+        <div id = "radios" class = "radios">
+            <input type ="radio" value ="ya" id="ya" name = "pref" onclick="organicUpdate(this.id)">Yes
+            <input type ="radio" value ="no" id="no" name = "pref" onclick="organicUpdate(this.id)">No
+        </div>
+            <br>
+            <p> Show me products with prices from:</p>
+            <div id = "radios" class = "radios">
+                <input type="radio" name = "price" onclick="lowHigh('displayProduct')" >Lowest to Highest</button>
+                <input type="radio" name = "price" onclick="highLow('displayProduct')" >Highest to Lowest</button>
+            </div>
+            <br>
+            <p><strong>If you change your preferences, you will need to click on one of the prices options above again for it to take effect.</strong></p>
+        </div>
+
+        <div id= "products" class="content">
+            <h3>Here are our available products based on your restrictions:</h3>
+            <div id="displayProduct" class="displayProduct"></div>
+            <div id = "radios" class = "radios">
+            <button id="addCart" type="button" class="block" onclick="selectedItems()">
+               Add Items To Cart
+           </button>
+         </div>
+        </div>
+
+         <div id= "cart" class="content">
+            <h3>Cart</h3>
+            <h4>You are purchasing:</h4>
+            <div id="displayCart" class="displayCart"></div>
+            <h4>Is this for pickup or delivery?</h4>
+            <div id= "method" class="method">
+            <select id="methodSelect" class="methodSelect" onchange="final(this.id)">
+                <option value=""></option>
+                <option value="None">Neither</option>
+                <option value="Pickup">Pickup</option>
+                <option value="Delivery">Delivery</option>
+            </select>
+            </div>
+         </div>
+
+         <div id= "checkout" class="content">
+            <div id= "cqc" class="cqc"></div>
+         </div>
+
+         <div id= "fin" class="content">
+
+         </div>
+
+         <div style="overflow:auto;">
+            <div style="float:right;">
+              <button type="button" id="prev" onclick="figureTab(-1)">Previous</button>
+              <button type="button" id="next" onclick="figureTab(1)">Next</button>
+            </div>
+          </div>
+
+          
+    </form>
+
+    <footer>
+        <p id="signature">Designed by me&#128526;</p>	
+    </footer>
+      
+    <script src="groceries.js"></script>
+    <script src="main.js"></script>
+  </div>
+</div>
+</body>

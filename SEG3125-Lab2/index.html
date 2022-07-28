@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id = "banner" class = "banner">
+
+    </div>
+    <div class="tab">
+            <h1>Storey McGroceryFace</h1>
+    <p>We are a real grocery store and definitely not made-up</p>
+        <button class="tablink" onclick="openInfo(event, 'Home')" id = "home">Home</button>
+        <button class="tablink" onclick="openInfo(event, 'Client')">Customer Information</button>
+        <button class="tablink" onclick="openInfo(event, 'Products')">Products</button>
+        <button class="tablink" onclick="openInfo(event, 'Cart')">Cart</button>
+    </div>
+
+    <div id="Home" class="tabcontent">
+        <h2>Welcome to Storey McGroceryFace!</h2>
+        <h3>How to use:</h3>
+    <ol type="1"class="center"> 
+        <li>The Customer page will allow you to indicate if you're allergic to nuts, lactose intolerant and/or if organic food is preferred.</li>
+        <li>The Products page will then display a filtered list of items based on your dietary restirctions/food preferences.</li>
+        <li>The Cart page will display your selected items and the total price.</li>
+    </ol>
+    </div>
+
+    <div id="Client" class="tabcontent">
+        <h3>Tell us about yourself!</h3>
+          <p>I am:</p>
+          <div id = "radios" class = "radios">
+          <input type ="radio" value ="Lactose" id="Lactose" name ="dietSelect" onclick="updateList(this.id)"><label for="Lactose">Lactose intolerant</label><br>
+          <input type ="radio" value ="Nuts" id="Nuts" name ="dietSelect" onclick="updateList(this.id)">Allergic to nuts <br>
+          <input type ="radio" value ="Both" id="Both" name ="dietSelect" onclick="updateList(this.id)">Allergic to nuts & lactose intorlerant<br>
+          <input type ="radio" value ="None" id="None" name ="dietSelect" onclick="updateList(this.id)">Neither<br></div>
+<br>
+<p>I have a preference for organic foods:</p>
+          <div id = "radios" class = "radios">
+          <input type ="radio" value ="ya" id="ya" name = "pref" onclick="organicUpdate(this.id)">Yes
+          <input type ="radio" value ="no" id="no" name = "pref" onclick="organicUpdate(this.id)">No</div>
+          <br><br>
+  <p> Show me products with prices from:</p> 
+  <div id = "radios" class = "radios">
+    <button id="submitButton" type="button" class="block" onclick="lowHigh('displayProduct')" >Lowest to Highest</button> 
+    <button id="submitButton" type="button" class="block" onclick="highLow('displayProduct')" >Highest to Lowest</button></div> 
+    </div>
+
+    <div id="Products" class="tabcontent">
+        <h3>Here are our available products based on your restrictions:</h3>
+           <div id="displayProduct" class="displayProduct"></div>
+           <div id = "radios" class = "radios">
+           <button id="addCart" type="button" class="block" onclick="selectedItems()">
+              Add Items To Cart
+          </button>
+        </div>
+    </div>
+      
+    <div id="Cart" class="tabcontent">
+        <h3>Cart</h3>
+        <h4>You are purchasing:</h4>
+        <div id="displayCart" class="displayCart"></div>
+    </div>
+    <footer>
+        <p id="signature">Designed by me&#128526;</p>	
+    </footer>
+      
+    <script src="groceries.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <title>SEG3125 Lab1</title>
+</head>
+
+<body>
+	<h1>Website UI Survey</h1>
+    <form>
+        <h3> Please visit the website <a href="http://arngren.net">Arngren</a>.</h3>
+        <br>
+        <a href="http://arngren.net"><img src="image/arngren.PNG" alt="http://arngren.net" class="center"></a>
+        <br>
+        <h2>No personal information will be asked, survey responses are anonymous.</h2> <br> 
+
+        <h3>Give your thoughts about the site's UI by answering the questions below:</h3>
+        <div class = Questions>
+        <h4>Select the following statements that you agree with:</h4>
+        <input type ="checkbox" name = "statements" value = "function"> <label for="function">At first glance the website appears to be functional and well made.</label>
+        <br>
+        <input type ="checkbox" name = "statements" value = "consistency"> The website is aesthetically pleasing and has good design consistency.
+        <br>
+        <input type ="checkbox" name = "statements" value = "Efficiency"> The website addresses the needs of its users in an efficient and timely manner. 
+        <br>
+        <input type ="checkbox" name = "statements" value = "Usability"> The website is intuitive and easy to use.
+        <br>
+        <input type ="checkbox" name = "statements" value = "Reliability"> The webiste functions without major flaws.
+        <br>
+        </div>
+
+        <div class = Questions>
+        <h4>On a scale from 0 to 10, how would you rate the UI design of the website</h4>
+        <select id="rating">
+			<option value="0" selected="selected">0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+			<option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+			<option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+		</select>
+        </div>
+
+        <div class = Questions>
+        <h4>Are there any suggestions you would like to make that will improve the site?</h4>
+        <textarea rows = 10>Enter suggestions here...
+        </textarea>
+        </div>
+
+        <div class = Questions>
+            <h4> Overall, the website's UI is a big factor on whether I will visit again in the future. Agree or disagree?</h4>
+            <input type ="radio" name = "Overall" value = "agree">Agree
+            <br>
+            <input type ="radio" name = "Overall" value = "disagree">Disagree
+        </div>
+        <br>
+        <h4>Additional Comments:</h4>
+	    <textarea rows = 10>Enter comments here...</textarea>
+    
+         <br>  <br>    <br>
+        <button id="submitButton" type="button" class="block">
+		    Submit Responses
+	    </button>
+        <footer>
+            <p id="signature">Designed by me&#128526;</p>	
+        </footer>
+    </form>
+</body>

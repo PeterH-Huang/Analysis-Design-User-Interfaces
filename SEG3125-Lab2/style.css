@@ -1,0 +1,125 @@
+
+/* This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp> */
+
+/* Style the tab */
+
+
+
+.tab {
+    overflow: hidden;
+    border: 0px solid #ccc;
+    background-color: #195923;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: #fecf6d;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ccc;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+
+  .tab h1{
+    color: #FFE512;
+    margin-bottom: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  .tab p{
+    margin-top: 0px;
+    color: #EDF0E5;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+
+  .tablink{
+    color: black;
+    background-color: #EA1D24;
+    font-family:Arial, Helvetica, sans-serif;
+    
+  }
+  .tabcontent h2{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  .tabcontent h3{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+
+  .tabcontent h4{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+
+
+
+  .center {
+    text-align: center;
+    list-style-position: inside;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  ol.center li{
+ text-align: left;
+ margin-left: 25%;
+ font-family:Arial, Helvetica, sans-serif;
+}
+
+.tabcontent p{
+  margin-bottom: 1px;
+  margin-left: 46%;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.radios{
+  text-align: left;
+  margin-left: 46%;
+}
+
+.displayProduct{
+  text-align: left;
+  margin-left: 46%;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.displayCart{
+  text-align: left;
+  margin-left: 46%;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.displayCart p{
+  text-align: left;
+  margin-left: 0%;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+.signature{
+  font-family:Arial, Helvetica, sans-serif;
+}
